@@ -20,14 +20,18 @@ export default function Nav(){
             </Link>
           </div>
         </div>
-        <Image 
-          src="https://utfs.io/f/13babe1c-170f-4288-8b9e-a1ea99a7266f-1ff77d.svg" 
-          width="200" 
-          height="0" 
-          alt="Class One Donuts"
-        />
+        <Link href="/">
+          <Image 
+            src="https://utfs.io/f/13babe1c-170f-4288-8b9e-a1ea99a7266f-1ff77d.svg" 
+            width="200" 
+            height="0" 
+            alt="Class One Donuts"
+          />
+        </Link>
         <div className="flex gap-5 font-bold">
-          <div className="text-pink-500 hover:text-pink-900">ORDER</div>
+          <div className="text-pink-500 hover:text-pink-900">
+            <Link href="https://www.doordash.com/store/class-one-donuts-glendora-867803/">ORDER</Link>
+          </div>
           <div className="text-pink-500 hover:text-pink-900">CONTACT</div>
         </div>
       </div>
