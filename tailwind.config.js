@@ -13,7 +13,8 @@ export default {
         'pblue': '#b8dee6ff',
         'pbrown': '#b99169ff',
         'dbrown': '#7d5c3bff',
-
+        
+        'lightpink':'#F7DEE0',
         'ppink': '#f6d6d8ff',
         'dpink': '#E89BA2',
         'xdpink': '#D95963',
