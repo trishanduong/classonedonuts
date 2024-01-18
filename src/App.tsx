@@ -6,6 +6,9 @@ function App() {
   return (
     <>
       <Navigation />
+      <div className="h-screen bg-ppink">
+
+      </div>
     </>
   )
 }

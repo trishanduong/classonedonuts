@@ -16,6 +16,7 @@ export default {
 
         'ppink': '#f6d6d8ff',
         'dpink': '#E89BA2',
+        'xdpink': '#D95963',
 
         'beige-white':'#F9F5F1',
       },
