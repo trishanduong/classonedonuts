@@ -5,6 +5,7 @@ import { SlClose } from "react-icons/sl";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
+import Logo from "../assets/logo.svg";
 
 const Navigation = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -13,13 +14,21 @@ const Navigation = () => {
     <div className="navbar grid grid-cols-[auto_1fr_auto] items-center w-screen px-5 lg:px-20 bg-beige-white">
       <div className="left-group grid gap-2.5 text-xl">
         <div className="hidden lg:flex lg:gap-8 " >
-          <a href="https://www.facebook.com/class1donuts/" className='text-dpink font-grotesk text-center font-bold lg:hover:text-xdpink hover:border-b hover:border-b-xdpink'>facebook</a>
-          <a href="https://www.instagram.com/class1donuts/" className='text-dpink font-grotesk text-center font-bold lg:hover:text-xdpink hover:border-b hover:border-b-xdpink'>instagram</a>
+          <div className="hover:bg-ppink rounded-full p-2">
+            <a href="https://www.facebook.com/class1donuts/" className='text-dpink font-grotesk text-center font-bold lg:hover:text-xdpink hover:border-b hover:border-b-xdpink'>
+              <FaFacebook color="#E89BA2" size={32} />
+            </a>
+          </div>
+          <div className="hover:bg-ppink rounded-full p-2">
+            <a href="https://www.instagram.com/class1donuts/" className='text-dpink font-grotesk text-center font-bold lg:hover:bg-ddpink'>
+              <FaInstagram color="#E89BA2" size={32} />
+            </a>
+          </div>
         </div>
       </div>
       <div className="center-group grid lg:gap-2.5 lg:justify-center grid-flow-col">
           <a href="/">
-            <img src="/src/assets/logo.svg" alt="Class One Donuts Logo" />
+            <img src={Logo} alt="Class One Donuts Logo" />
           </a>
        </div>
       <div className="right-group grid gap-2.5 justify-self-end">
