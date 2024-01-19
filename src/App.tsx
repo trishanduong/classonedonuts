@@ -10,8 +10,10 @@ function App() {
   return (
     <>
       <Navigation />
-      <Hero />
-      <Middle />
+      <main>
+        <Hero />
+        <Middle />
+      </main>
       <Footer />
     </>
   )

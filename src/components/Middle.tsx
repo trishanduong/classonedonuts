@@ -3,6 +3,7 @@ import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Info from "./Info";
+import { GiDonut } from "react-icons/gi";
 
 
 const Middle = () => {
@@ -51,10 +52,18 @@ const Middle = () => {
 
     return (
         <section ref={mainSection} className="h-full grid transition-colors duration-300 bg-beige-white">
-            <div className="h-[50vh] w-full p-3 flex justify-center items-center bg-beige-white">
-                <p ref={text} className=" font-grotesk text-5xl font-medium text-pbrown text-center">
+            <div className="h-[60vh] w-full flex flex-col justify-center items-center bg-beige-white">
+                <p ref={text} className=" font-grotesk text-5xl font-medium text-pbrown text-center pb-8">
                     From our family to yours, <span className="text-dbrown "> Class One Donuts: </span> blending tradition with innovation 
                 </p>
+                <div className="p-3 bg-dbrown font-grotesk text-beige-white text-4xl rounded-md hover:bg-pbrown">
+                    <a href="https://www.theinfatuation.com/los-angeles/guides/best-donut-shops-in-southern-california-class-one-donuts" aria-label="Article about Class One Donuts" className="">
+                            READ ABOUT OUR STORY 
+                        <span className="flex justify-center">
+                             <GiDonut id="donut" size={64} color="white" aria-label="donut"/>
+                        </span>
+                    </a>
+                </div>
             </div>
         <div ref={slider} className="slider bg-beige-white">
             <div ref={sliderWrapper} className="slider-wrapper">

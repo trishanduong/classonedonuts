@@ -1,10 +1,11 @@
 
 const Info = () => {
+
   return (
-    <section className="font-grotesk w-full h-screen flex justify-center items-center bg-beige-white p-5">
+    <section id="contact" className="font-grotesk w-full h-screen flex justify-center items-center bg-beige-white p-5 ">
       <div className="bg-white">
-        <div className="max-w-sm rounded overflow-hidden bg-ppink">
-            <a href="https://www.doordash.com/store/class-one-donuts-glendora-867803/">
+        <div className="max-w-sm rounded overflow-hidden bg-ppink opacity-0" >
+            <a href="https://www.doordash.com/store/class-one-donuts-glendora-867803/" aria-label="Doordash">
                 <img className="w-full hover:opacity-75 hover:transition-opacity ease-in-out" src="https://s3-media0.fl.yelpcdn.com/bphoto/5IeCtxWtVMq9oinvdRV9hw/o.jpg" alt="Chocolate donut being held in front of Class One Donuts store"  />
             </a>
             <div className="px-6 py-4">

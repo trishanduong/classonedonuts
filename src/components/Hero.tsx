@@ -1,5 +1,5 @@
+import { useEffect, useRef, Suspense } from "react";
 import gsap from "gsap";
-import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Landing from "../assets/images/image1.png";
@@ -20,10 +20,9 @@ const Hero = ( ) => {
         end: "bottom top",
         animation: gsap
           .timeline()
-          .to(img.current, { scale:1.1, y: '+20%', duration: 0.5, delay:0.2, ease: "power4.out"}),
+          .to(img.current, { scale:1.1, y: '+20%', duration: 0.5, delay:0.2, ease: "Power4.inOut"}),
         toggleActions: "play none none none",
       });
-      ScrollTrigger.refresh();
   
   }, []);
 
@@ -37,13 +36,13 @@ const Hero = ( ) => {
 
   return (
     <section className="hero relative flex w-full h-screen select-none justify-center items-center" aria-label="hero">
-      <div ref={imgContainer} className="relative opacity-0 overflow-hidden scale-100 h-screen w-full">
-        <img ref={img} src={Landing} alt="Assortment of donuts placed next to a luscious pothos plant." className="scale-100 w-full h-full object-cover lg:w-screen lg:overflow-auto opacity-90 pointer-none" />
+      
+      <div ref={imgContainer} className="relative opacity-0 overflow-hidden h-screen w-full">
+        <img ref={img} src={Landing} loading="lazy" alt="Assortment of donuts placed next to a luscious pothos plant." className="scale-100 w-full h-full object-cover lg:w-screen lg:overflow-auto opacity-90 pointer-none" />
         <a href="https://www.doordash.com/store/class-one-donuts-glendora-867803/" 
            ref={order} 
-           aria-description="Link to order from doordash"
            aria-label="Order Now"
-           className="translate-y-96 absolute bottom-24 right-0.5 bg-beige-white text-pbrown font-grotesk font-semibold text-3xl px-4 py-2 rounded-full shadow-lg hover:bg-dbrown hover:text-zinc-100 hover:transition-transform opacity-0 border border-dbrown hover:border-beige-white">
+           className="translate-y-96 absolute bottom-24 right-1 bg-beige-white text-pbrown font-grotesk font-semibold text-3xl px-4 py-2 rounded-full shadow-lg hover:bg-dbrown hover:text-zinc-100 hover:transition-transform opacity-0 border border-dbrown hover:border-beige-white">
             Order Now
         </a>
         <div className="absolute top-4 left-44 lg:left-0 lg:top-1/2">

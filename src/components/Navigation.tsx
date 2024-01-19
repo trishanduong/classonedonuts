@@ -35,7 +35,7 @@ const Navigation = () => {
       </div>
       <div className="center-group grid lg:gap-2.5 lg:justify-center grid-flow-col">
           <a href="/">
-            <img src={Logo} alt="Class One Donuts Logo" />
+            <img src={Logo} alt="Class One Donuts Logo" width={250} height="auto" />
           </a>
        </div>
       <div className="right-group grid gap-2.5 justify-self-end">
