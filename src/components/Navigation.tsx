@@ -13,7 +13,7 @@ const Navigation = () => {
   const [openModal, setOpenModal] = useState(false);
 
    return (
-    <div className="navbar grid grid-cols-[auto_1fr_auto] items-center w-screen px-5 lg:px-20 bg-beige-white">
+    <nav className="navbar grid grid-cols-[auto_1fr_auto] items-center w-screen px-5 lg:px-20 bg-beige-white">
       <div className="left-group grid gap-2.5 text-xl">
         <div className="hidden lg:flex lg:gap-8 " >
           <div className="hover:bg-ppink rounded-full p-2">
@@ -49,16 +49,16 @@ const Navigation = () => {
             </a>
           </div>
           <div className="lg:hidden">
-            <div className="p-3">
+            <button className="p-3" aria-label="Mobile hamburger menu">
               <GiHamburgerMenu size={28} color="#E89BA2" onClick={() => setOpenModal(true)} className="cursor-pointer hover:bg-lightpink m-3 "/>
-            </div>
+            </button>
             {/* Modal Overlay  */}
             {openModal && (
 
               <div className="lg:hidden fixed top-0 left-0 h-screen w-full bg-beige-white transition ease-in-out flex-col z-10">
-                <div className="flex justify-end p-3">
-                  <SlClose size={32} color="#E89BA2" onClick={() => setOpenModal(false)} className="cursor-pointer hover:bg-lightpink rounded-full"/>
-                </div>
+                <button aria-label="Close Modal" className="flex justify-end p-3">
+                  <SlClose size={32} color="#E89BA2" aria-hidden="true" onClick={() => setOpenModal(false)} className="cursor-pointer hover:bg-lightpink rounded-full"/>
+                </button>
                 <div>
                 <ul className="flex flex-col justify-center items-center gap-3">
                   <li>
@@ -109,7 +109,7 @@ const Navigation = () => {
         </div>
       </div>
       
-    </div>
+    </nav>
    )
 }
 

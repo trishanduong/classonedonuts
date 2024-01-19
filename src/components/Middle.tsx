@@ -50,7 +50,7 @@ const Middle = () => {
     }, []);
 
     return (
-        <div ref={mainSection} className="h-full grid transition-colors duration-300 bg-beige-white">
+        <section ref={mainSection} className="h-full grid transition-colors duration-300 bg-beige-white">
             <div className="h-[50vh] w-full p-3 flex justify-center items-center bg-beige-white">
                 <p ref={text} className=" font-grotesk text-5xl font-medium text-pbrown text-center">
                     From our family to yours, <span className="text-dbrown "> Class One Donuts: </span> blending tradition with innovation 
@@ -85,7 +85,7 @@ const Middle = () => {
             <p className="font-grotesk text-5xl p-5 lg:text-8xl font-medium text-pbrown bg-beige-white text-center ">our donuts are baked fresh daily♥</p>
         </div>
             <Info />
-        </div>
+        </section>
     )
 };
 
