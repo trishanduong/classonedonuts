@@ -10,7 +10,7 @@ const Navigation = () => {
   const [openModal, setOpenModal] = useState(false);
 
    return (
-    <div className="navbar grid grid-cols-[auto_1fr_auto] items-center w-screen px-5 lg:px-20">
+    <div className="navbar grid grid-cols-[auto_1fr_auto] items-center w-screen px-5 lg:px-20 bg-beige-white">
       <div className="left-group grid gap-2.5 text-xl">
         <div className="hidden lg:flex lg:gap-8 " >
           <a href="https://www.facebook.com/class1donuts/" className='text-dpink font-grotesk text-center font-bold lg:hover:text-xdpink hover:border-b hover:border-b-xdpink'>facebook</a>
@@ -82,9 +82,7 @@ const Navigation = () => {
                   </ul>
                 </div>
               </div>
-              
             )}
-            
           </div>
         </div>
       </div>
