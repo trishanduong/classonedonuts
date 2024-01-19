@@ -59,25 +59,36 @@ const Middle = () => {
         <div ref={slider} className="slider bg-beige-white">
             <div ref={sliderWrapper} className="slider-wrapper">
                 <div className="slide slide1">
-                    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/MYgU5sD7OKaYQMIPD6hR4w/o.jpg" alt="Plate of a sprinkled pink donut tower" className="insta"/>
+                    <img 
+                        aria-label="Image of plate of a sprinkled pink donut tower"
+                        src="https://s3-media0.fl.yelpcdn.com/bphoto/MYgU5sD7OKaYQMIPD6hR4w/o.jpg" alt="Plate of a sprinkled pink donut tower" className="insta"/>
                 </div>
                 <div className="slide">
-                    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/foWdyjdL_XI3H4jhKqYuxg/o.jpg" alt="Donut display of cronuts" className="insta" />
+                    <img 
+                        src="https://s3-media0.fl.yelpcdn.com/bphoto/foWdyjdL_XI3H4jhKqYuxg/o.jpg" 
+                        alt="Donut display of cronuts" 
+                        className="insta" 
+                        aria-label="Image of donut display of cronuts"
+                    />
                 </div>
                 <div className="slide">
-                    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/dv4g5Q6S013VH7f01by1Ug/o.jpg" alt="blended ice coffees (mocha, cookies n cream, caramel" className="insta" />
+                    <img 
+                        aria-label="image of blended ice coffees (mocha, cookies n cream, caramel"
+                        src="https://s3-media0.fl.yelpcdn.com/bphoto/dv4g5Q6S013VH7f01by1Ug/o.jpg" alt="blended ice coffees (mocha, cookies n cream, caramel" className="insta" />
                 </div>
                 <div className="slide">
-                    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/zQVcVQtZg-8XW90rLwBXyA/o.jpg" alt="Specialty donuts: madagascar vanilla, samoas, oreo swirl, fruity pebbles" className="insta" />
+                    <img 
+                        aria-label="image of Specialty donuts: madagascar vanilla, samoas, oreo swirl, fruity pebbles"
+                        src="https://s3-media0.fl.yelpcdn.com/bphoto/zQVcVQtZg-8XW90rLwBXyA/o.jpg" alt="Specialty donuts: madagascar vanilla, samoas, oreo swirl, fruity pebbles" className="insta" />
                 </div>
                 <div className="slide">
-                    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/BZLdjOF1A2S6xKy_3p1uMQ/o.jpg" alt="Fruity pebbles glazed donut" className="insta" />
+                    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/BZLdjOF1A2S6xKy_3p1uMQ/o.jpg" aria-label="image of fruity pebble donuts" alt="Fruity pebbles glazed donut" className="insta" />
                 </div>
                 <div className="slide">
-                    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/3oxc0D0YxGs1hm0gix2Myw/o.jpg" alt="Fruity pebbles glazed donut" className="insta" />
+                    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/3oxc0D0YxGs1hm0gix2Myw/o.jpg" alt="Box of donuts" aria-label="image of box of donuts" className="insta" />
                 </div>
                 <div className="slide">
-                    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/57KDUQcoSKs-JVXT73K8zA/o.jpg" alt="Donut display" className="insta" />
+                    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/57KDUQcoSKs-JVXT73K8zA/o.jpg" aria-label="donut display" alt="Donut display" className="insta" />
                 </div>
             </div>
         </div>

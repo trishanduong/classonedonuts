@@ -41,7 +41,8 @@ const Hero = ( ) => {
         <img ref={img} src={Landing} alt="Assortment of donuts placed next to a luscious pothos plant." className="scale-100 w-full h-full object-cover lg:w-screen lg:overflow-auto opacity-90 pointer-none" />
         <a href="https://www.doordash.com/store/class-one-donuts-glendora-867803/" 
            ref={order} 
-           aria-label="Link to order from doordash"
+           aria-description="Link to order from doordash"
+           aria-label="Order Now"
            className="translate-y-96 absolute bottom-24 right-0.5 bg-beige-white text-pbrown font-grotesk font-semibold text-3xl px-4 py-2 rounded-full shadow-lg hover:bg-dbrown hover:text-zinc-100 hover:transition-transform opacity-0 border border-dbrown hover:border-beige-white">
             Order Now
         </a>

@@ -62,17 +62,17 @@ const Navigation = () => {
                 <div>
                 <ul className="flex flex-col justify-center items-center gap-3">
                   <li>
-                    <a href="/">
+                    <a href="/" aria-label="logo">
                       <img src={Logo} alt="Class One Donuts Logo" width={300}/>
                     </a>
                   </li>
                   <li className="hover:bg-lightpink  py-2 px-3 rounded-full">
-                    <a href="https://www.doordash.com/store/class-one-donuts-glendora-867803/" className='text-dpink  font-grotesk text-center font-bold text-xl'>
+                    <a aria-label="order" href="https://www.doordash.com/store/class-one-donuts-glendora-867803/" className='text-dpink  font-grotesk text-center font-bold text-xl'>
                       order
                     </a>
                   </li>
                   <li className="hover:bg-lightpink  py-2 px-3 rounded-full">
-                    <a href="https://www.theinfatuation.com/los-angeles/guides/best-donut-shops-in-southern-california-class-one-donuts" className='text-dpink  font-grotesk text-center font-bold text-xl'>
+                    <a aria-label="about us" href="https://www.theinfatuation.com/los-angeles/guides/best-donut-shops-in-southern-california-class-one-donuts" className='text-dpink  font-grotesk text-center font-bold text-xl'>
                       about us
                     </a>
                   </li>
@@ -86,17 +86,17 @@ const Navigation = () => {
                     follow our socials!
                   </h1>
                   <ul className="flex gap-5 p-3">
-                    <li className="hover:bg-lightpink rounded-full p-2">
+                    <li className="hover:bg-lightpink rounded-full p-2" aria-label="Facebook Link">
                       <a href="https://www.facebook.com/class1donuts/" >
                         <FaFacebook color="#E89BA2" size={32} />
                       </a>
                     </li>
-                    <li className="hover:bg-lightpink rounded-full p-2" >
+                    <li className="hover:bg-lightpink rounded-full p-2" aria-label="Instagram Link">
                       <a href="https://www.instagram.com/class1donuts/" >
                         <FaInstagram color="#E89BA2" size={32} />
                       </a>
                     </li>
-                    <li className="hover:bg-lightpink rounded-full p-2" >
+                    <li className="hover:bg-lightpink rounded-full p-2" aria-label="Yelp Link">
                       <a href="https://www.yelp.com/biz/class-one-donuts-glendora-3?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" >
                         <FaYelp color="#E89BA2" size={32} />
                       </a>

@@ -16,13 +16,13 @@ const Footer = () => {
                         <FaFacebook color="#b99169ff" size={28} />
                       </a>
                     </li>
-                    <li className="hover:bg-beige-white rounded-full p-2" aria-label="Link to Instagram profile" >
-                      <a href="https://www.instagram.com/class1donuts/" >
+                    <li className="hover:bg-beige-white rounded-full p-2"  >
+                      <a href="https://www.instagram.com/class1donuts/" aria-label="Link to Instagram profile">
                         <FaInstagram color="#b99169ff" size={28} />
                       </a>
                     </li>
-                    <li className="hover:bg-beige-white rounded-full p-2" aria-label="Link to Yelp business page">
-                      <a href="https://www.yelp.com/biz/class-one-donuts-glendora-3?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" >
+                    <li className="hover:bg-beige-white rounded-full p-2" >
+                      <a aria-label="Link to Yelp business page" href="https://www.yelp.com/biz/class-one-donuts-glendora-3?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" >
                         <FaYelp color="#b99169ff" size={28} />
                       </a>
                     </li>
