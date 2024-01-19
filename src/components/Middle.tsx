@@ -8,13 +8,13 @@ const Middle = () => {
     const wrapper = useRef(null);
     const slider = useRef<HTMLDivElement>(null);
     const sliderWrapper = useRef<HTMLDivElement>(null);
-    const firstImage = useRef(null); // Reference to the first image
-    const text = useRef(null); // Keeping your text ref
-
+    const firstImage = useRef(null); 
+    const text = useRef(null); 
+    
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-
-        if (slider.current && sliderWrapper.current && firstImage.current && wrapper.current) {
+        
+        if (slider.current && sliderWrapper.current && firstImage.current && wrapper.current ) {
             const totalWidth = sliderWrapper.current.scrollWidth;
             const sliderWidth = slider.current.offsetWidth;
 
@@ -51,16 +51,16 @@ const Middle = () => {
     }, []);
 
     return (
-        <section ref={wrapper} className="h-full grid transition-colors duration-300 bg-beige-white">
-            <div className="h-[60vh] w-full flex flex-col justify-center items-center bg-beige-white pt-50">
+        <section ref={wrapper} className="h-full grid transition-colors duration-300 bg-beige-white py-15">
+            <div className="h-[60vh] w-full flex flex-col justify-center items-center bg-beige-white pt-50 mt-5">
                 <p ref={text} className="font-grotesk text-3xl lg:text-5xl font-medium text-pbrown text-center pb-8 px-2">
                     From our family to yours, <span className="text-dbrown">Class One Donuts:</span> blending tradition with innovation 
                 </p>
-                <a href="https://www.theinfatuation.com/los-angeles/guides/best-donut-shops-in-southern-california-class-one-donuts" aria-label="Article about Class One Donuts" className="p-3 bg-dbrown font-grotesk text-beige-white text-2xl lg:text-4xl rounded-md hover:bg-pbrown text-center">
+                <span className="flex justify-center">
+                    <GiDonut id="donut" size={64} color="#7d5c3bff" aria-label="donut"/>
+                </span>
+                <a href="https://www.theinfatuation.com/los-angeles/guides/best-donut-shops-in-southern-california-class-one-donuts" aria-label="Read about our story" className="p-3 bg-dbrown font-grotesk text-beige-white text-2xl lg:text-4xl rounded-md hover:bg-pbrown text-center">
                     READ ABOUT OUR STORY 
-                    <span className="flex justify-center">
-                        <GiDonut id="donut" size={64} color="white" aria-label="donut"/>
-                    </span>
                 </a>
             </div>
             <div ref={slider} className="slider bg-beige-white">
@@ -95,9 +95,7 @@ const Middle = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <p className="font-grotesk text-5xl p-5 lg:text-8xl font-medium text-pbrown bg-beige-white text-center">our donuts are baked fresh daily!</p>
-            </div>
+            
         </section>
     )
 };

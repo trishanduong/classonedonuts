@@ -41,10 +41,10 @@ const Navigation = () => {
       <div className="right-group grid gap-2.5 justify-self-end">
         <div className="">
           <div className="hidden lg:flex lg:gap-8">
-            <a href="https://www.doordash.com/store/class-one-donuts-glendora-867803/" className='text-dpink lg:hover:text-xdpink font-grotesk text-center font-bold text-xl hover:border-b hover:border-b-xdpink'>
+            <a href="https://www.doordash.com/store/class-one-donuts-glendora-867803/" className='text-dpink lg:hover:text-xdpink font-grotesk text-center font-bold text-2xl hover:border-b hover:border-b-xdpink'>
               order
             </a>
-            <a href="#contact" className='text-dpink font-grotesk text-center font-bold text-xl lg:hover:text-xdpink hover:border-b hover:border-b-xdpink'>
+            <a href="#contact" className='text-dpink font-grotesk text-center font-bold text-2xl lg:hover:text-xdpink hover:border-b hover:border-b-xdpink'>
               contact
             </a>
           </div>
@@ -76,12 +76,12 @@ const Navigation = () => {
                       about us
                     </a>
                   </li>
-                  <li className="hover:bg-lightpink py-2 px-3 rounded-full">
-                    <a href="#contact" className='text-dpink font-grotesk text-center font-bold text-xl lg:hover:text-xdpink'>contact</a>
+                  <li className="hover:bg-lightpink py-2 px-3 rounded-full " >
+                    <a onClick={() => setOpenModal(false)} href="#contact" className='text-dpink font-grotesk text-center font-bold text-xl lg:hover:text-xdpink'>contact</a>
                   </li>
                 </ul>
                 </div>
-                <div className="flex flex-col justify-center items-center pt-80 ">
+                <div className="flex flex-col justify-center items-center pt-36 ">
                   <h1 className='text-dpink font-grotesk text-center font-bold text-xl lg:hover:text-xdpink '>
                     follow our socials!
                   </h1>
@@ -108,7 +108,6 @@ const Navigation = () => {
           </div>
         </div>
       </div>
-      
     </nav>
    )
 }

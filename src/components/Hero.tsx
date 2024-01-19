@@ -1,8 +1,7 @@
 import { useEffect, useRef} from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-import Landing from "../assets/images/image1.png";
+import Landing from "../assets/images/image1.webp";
 
 const Hero = ( ) => {
   const imgContainer = useRef(null);
@@ -35,10 +34,15 @@ const Hero = ( ) => {
   }, []);
 
   return (
-    <section className="hero relative flex w-full h-screen select-none justify-center items-center" aria-label="hero">
+    <section className="hero relative flex w-full h-full select-none justify-center items-center" aria-label="hero">
       
-      <div ref={imgContainer} className="relative opacity-0 overflow-hidden h-screen w-full">
-        <img ref={img} src={Landing} loading="lazy" alt="Assortment of donuts placed next to a luscious pothos plant." className="scale-100 w-full h-full object-cover lg:w-screen lg:overflow-auto opacity-90 pointer-none" />
+      <div ref={imgContainer} className="relative opacity-0 overflow-auto h-[90vh] w-full">
+        <img 
+           ref={img} 
+           src={Landing}  
+           rel="preload" 
+           alt="Assortment of donuts placed next to a luscious pothos plant." 
+           className="w-full h-full object-cover lg:w-screen lg:overflow-auto opacity-90 pointer-none" />
         <a href="https://www.doordash.com/store/class-one-donuts-glendora-867803/" 
            ref={order} 
            aria-label="Order Now"
