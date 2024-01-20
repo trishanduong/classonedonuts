@@ -20,6 +20,8 @@ export default {
         'xdpink': '#D95963',
 
         'beige-white':'#F9F5F1',
+        'dbw':'#EDE0D4',
+        'xdbw':'#E1CBB7'
       },
     },
   },

@@ -2,7 +2,9 @@
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import { GiDonut } from "react-icons/gi";
+import { ImPointDown } from "react-icons/im";
 
 const Middle = () => {
     const wrapper = useRef(null);
@@ -64,6 +66,15 @@ const Middle = () => {
                 </a>
             </div>
             <div ref={slider} className="slider bg-beige-white">
+                <div className="text-dpink text-center font-grotesk">
+                    <div className="flex p-5 justify-center">
+                        <p className="flex text-3xl lg:text-5xl font-medium z-90 pb-7">Take a glimpse at our yummy goodies <ImPointDown size={48} className="animate-bounce lg:hidden " aria-label="Arrow pointing down"/> </p>
+                        <ImPointDown size={48} className="animate-bounce hidden lg:block " aria-label="Arrow pointing down"/>
+                    </div>
+                    <p className=" text-pbrown text-lg  hover:text-dpink">
+                        <a href="#contact" className="underline underline-offset-8 hover:bg-dbw p-3 rounded-md">Or take a look at our business hours! </a>
+                    </p>
+                </div>
                 <div ref={sliderWrapper} className="slider-wrapper">
                     <div className="slide slide1">
                         <img 

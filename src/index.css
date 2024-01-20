@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+* {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: "CabinetGrotesk-Variable";
   src: url("./assets//fonts/CabinetGrotesk-Variable.ttf") format("truetype");
@@ -37,4 +39,10 @@
   height: 100%;
   object-fit: cover;
 
+}
+
+.voted {
+  text-shadow: 0 2px 1px #b99169ff, 
+  -1px 3px 1px #7d5c3bff, 
+  -2px 5px 1px #b99169ff;
 }

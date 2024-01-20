@@ -39,7 +39,7 @@ const Hero = ( ) => {
       <div ref={imgContainer} className="relative opacity-0 overflow-auto h-[90vh] w-full">
         <img 
            ref={img} 
-           src={Landing}  
+           src={ Landing } 
            rel="preload" 
            alt="Assortment of donuts placed next to a luscious pothos plant." 
            className="w-full h-full object-cover lg:w-screen lg:overflow-auto opacity-90 pointer-none" />
@@ -50,8 +50,8 @@ const Hero = ( ) => {
             Order Now
         </a>
         <div className="absolute top-4 left-44 lg:left-0 lg:top-1/2">
-            <div ref={text} className="translate-y-96 p-3 text-beige-white text-5xl lg:text-8xl drop-shadow-md lg:w-1/2 opacity-0">
-                voted the <span className="italic text-dpink bg-beige-white px-3">best</span> donuts in glendora
+            <div ref={text} className="voted translate-y-96 p-3 text-beige-white text-6xl lg:text-8xl drop-shadow-md lg:w-1/2 opacity-0">
+                voted <span className="italic text-dpink bg-beige-white px-3 leading-14">best</span> donuts in glendora
             </div>
         </div>
       </div>
