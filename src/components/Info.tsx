@@ -22,8 +22,8 @@ const Info = () => {
   
   return (
     <>
-    <section id="contact" className="font-grotesk w-full h-screen bg-beige-white ">
-      <div className="flex flex-col justify-center items-center text-center py-3 lg:py-10" >
+    <section id="contact" className="font-grotesk w-full h-screen bg-beige-white">
+      <div className="flex flex-col justify-center items-center text-center py-3 lg:pb-24" >
         <div ref={donut1 }>
           <GiDonut size={48} color="#E89BA2" aria-label="Donut"/>
 
@@ -33,7 +33,7 @@ const Info = () => {
           <GiDonut  size={48} color="#E89BA2" aria-label="Donut" />
         </div>
       </div>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mb-48">
         <div className="bg-white">
           <div className="max-w-sm rounded overflow-auto bg-ppink" >
               <a href="https://www.doordash.com/store/class-one-donuts-glendora-867803/" aria-label="Doordash">

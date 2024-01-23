@@ -34,7 +34,7 @@ const Hero = ( ) => {
   }, []);
 
   return (
-    <section className="hero relative flex w-full h-full select-none justify-center items-center" aria-label="hero">
+    <section className="hero relative flex w-screen h-full select-none justify-center items-center overflow-hidden" aria-label="hero">
       
       <div ref={imgContainer} className="relative opacity-0 overflow-auto h-[90vh] w-full">
         <img 
@@ -49,7 +49,7 @@ const Hero = ( ) => {
            className="translate-y-96 absolute bottom-24 right-1 bg-beige-white text-pbrown font-grotesk font-semibold text-3xl px-4 py-2 rounded-full shadow-lg hover:bg-dbrown hover:text-zinc-100 hover:transition-transform opacity-0 border border-dbrown hover:border-beige-white">
             Order Now
         </a>
-        <div className="absolute top-4 left-44 lg:left-0 lg:top-1/2">
+        <div className="absolute top-4 left-36 lg:left-0 lg:top-1/2">
             <div ref={text} className="voted translate-y-96 p-3 text-beige-white text-6xl lg:text-8xl drop-shadow-md lg:w-1/2 opacity-0">
                 voted <span className="italic text-dpink bg-beige-white px-3 leading-14">best</span> donuts in glendora
             </div>

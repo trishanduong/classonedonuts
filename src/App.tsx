@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <>
+    <div className="overflow-hidden">
       <Navigation />
       <main>
         <Hero />
@@ -17,7 +17,7 @@ function App() {
         <Info />
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
 

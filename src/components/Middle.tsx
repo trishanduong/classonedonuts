@@ -6,6 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { GiDonut } from "react-icons/gi";
 import { ImPointDown } from "react-icons/im";
 
+import dogs from "../assets/images/donutdogs.png"
+
 const Middle = () => {
     const wrapper = useRef(null);
     const slider = useRef<HTMLDivElement>(null);
@@ -54,7 +56,7 @@ const Middle = () => {
 
     return (
         <section ref={wrapper} className="h-full grid transition-colors duration-300 bg-beige-white py-15">
-            <div className="h-[60vh] w-full flex flex-col justify-center items-center bg-beige-white pt-50 mt-5">
+            <div className="h-screen w-full flex flex-col justify-center items-center bg-beige-white pt-50 mt-5">
                 <p ref={text} className="font-grotesk text-3xl lg:text-5xl font-medium text-pbrown text-center pb-8 px-2">
                     From our family to yours, <span className="text-dbrown">Class One Donuts:</span> blending tradition with innovation 
                 </p>
@@ -92,8 +94,8 @@ const Middle = () => {
                     </div>
                     <div className="slide">
                         <img 
-                            aria-label="image of Specialty donuts: madagascar vanilla, samoas, oreo swirl, fruity pebbles"
-                            src="https://s3-media0.fl.yelpcdn.com/bphoto/zQVcVQtZg-8XW90rLwBXyA/o.jpg" alt="Specialty donuts: madagascar vanilla, samoas, oreo swirl, fruity pebbles" className="insta" />
+                            aria-label="two dogs looking at a colorful fruity pebble donut"
+                            src={dogs} alt="two dogs looking at a colorful fruity pebble donut" className="insta" />
                     </div>
                     <div className="slide">
                         <img src="https://s3-media0.fl.yelpcdn.com/bphoto/BZLdjOF1A2S6xKy_3p1uMQ/o.jpg" aria-label="image of fruity pebble donuts" alt="Fruity pebbles glazed donut" className="insta" />

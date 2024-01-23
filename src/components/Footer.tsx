@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <footer className="h-auto w-full flex flex-col justify-center items-center bg-dbrown">
             <img src={Logo} alt="Class One Donuts Logo" />
-            <p className="text-pbrown">© Copyright 2023 | Class One Donuts</p>
+            <p className="text-pbrown">© Copyright 2024 | Class One Donuts</p>
             <ul className="flex gap-5 p-3">
                 <li className="hover:bg-beige-white rounded-full p-2">
                   <a href="https://www.facebook.com/class1donuts/" aria-label="Link to Facebook page">
