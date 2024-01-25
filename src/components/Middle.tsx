@@ -7,6 +7,7 @@ import { GiDonut } from "react-icons/gi";
 import { ImPointDown } from "react-icons/im";
 
 import dogs from "../assets/images/donutdogs.png"
+import Filler from "./Filler";
 
 const Middle = () => {
     const wrapper = useRef(null);
@@ -56,7 +57,7 @@ const Middle = () => {
 
     return (
         <section ref={wrapper} className="h-full grid transition-colors duration-300 bg-beige-white py-15">
-            <div className="h-screen w-full flex flex-col justify-center items-center bg-beige-white pt-50 mt-5">
+            <div className="h-[75vh] w-full flex flex-col justify-center items-center bg-beige-white pt-50 mt-5">
                 <p ref={text} className="font-grotesk text-3xl lg:text-5xl font-medium text-pbrown text-center pb-8 px-2">
                     From our family to yours, <span className="text-dbrown">Class One Donuts:</span> blending tradition with innovation 
                 </p>
@@ -67,7 +68,8 @@ const Middle = () => {
                     READ ABOUT OUR STORY 
                 </a>
             </div>
-            <div ref={slider} className="slider bg-beige-white">
+            <Filler />
+            <div ref={slider} className="slider bg-beige-white pt-20">
                 <div className="text-dpink text-center font-grotesk">
                     <div className="flex p-5 justify-center">
                         <p className="flex text-3xl lg:text-5xl font-medium z-90 pb-7">Take a glimpse at our yummy goodies <ImPointDown size={48} className="animate-bounce lg:hidden " aria-label="Arrow pointing down"/> </p>

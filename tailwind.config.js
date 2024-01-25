@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./index.html",
@@ -6,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      gridTemplateRows: {
+        '[auto,auto,1fr]': 'auto auto 1fr',
+      },
       fontFamily: {
         'grotesk': ['CabinetGrotesk-Variable', 'sans-serif'],
       },
@@ -25,6 +29,8 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    // require('@tailwindcss/aspect-ratio')
+  ],
 }
 

@@ -2,7 +2,7 @@ const BusinessHours = () => {
 
 
   return (
-    <div className="py-16 bg-beige-white font-grotesk">
+    <div className="pb-16 bg-beige-white font-grotesk">
         <div className="business-hours text-center text-pbrown  text-xl p-4 rounded-md">
             <p className="font-bold">Business Hours</p>
             <ul>
