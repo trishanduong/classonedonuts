@@ -18,7 +18,7 @@ const Filler = ( ) => {
         animation: gsap
           .timeline()
           .to(text.current, { y: 0, opacity:1, duration: 1, ease: "power4.inOut", stagger:1 }, "-=1.0")
-          .to(imgContainer.current, { scale:1, y:"+10%", duration: 0.5, delay:0.2, ease: "Power4.inOut", stagger: 1}),
+          .to(imgContainer.current, { scale:1, duration: 0.5, delay:0.2, ease: "Power4.inOut", stagger: 1}),
         toggleActions: "play none none none",
       });
   
@@ -26,7 +26,7 @@ const Filler = ( ) => {
 
   return (
     <section id="filler" className="hero relative flex flex-col w-screen h-[80vh] select-none justify-center items-center overflow-hidden font-grotesk" aria-label="hero">
-      <div ref={text} className=" p-3 pt-5 w-full text-dbrown text-2xl lg:text-4xl opacity-0">
+      <div ref={text} className=" p-3 pt-5 w-full text-dbrown text-3xl lg:text-4xl opacity-0 px-16">
         Class One Donuts is a local small-owned donut shop in Glendora. 
         We strive to provide the best customer service and memorable experience at our shop. 
       </div>

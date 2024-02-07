@@ -9,13 +9,16 @@ function App() {
 
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-beige-white">
       <Navigation />
       <main>
         <Hero />
         <Middle />
         <Info />
       </main>
+      <div className="lg:h-[25vh] bg-beige-white">
+
+      </div>
       <Footer />
     </div>
   )

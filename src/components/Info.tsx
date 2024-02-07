@@ -22,7 +22,7 @@ const Info = () => {
   
   return (
     <>
-    <section id="contact" className="font-grotesk w-full h-screen bg-beige-white">
+    <section id="contact" className="font-grotesk w-full h-screen bg-beige-white py-11">
       <div className="flex flex-col justify-center items-center text-center py-3 lg:pb-24" >
         <div ref={donut1 }>
           <GiDonut size={48} color="#E89BA2" aria-label="Donut"/>
@@ -46,7 +46,7 @@ const Info = () => {
                   <p className="text-xl font-semibold text-dbrown">(626) 594-0079</p>
             </div>
           <a href="https://maps.app.goo.gl/qis8f47BweHR156AA" className="text-xl flex justify-center p-3 bg-pbrown text-dbrown font-bold hover:bg-dbrown hover:text-beige-white ease-in-out">
-              View Map
+            View Map
           </a>
           </div>
         </div>
