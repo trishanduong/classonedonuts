@@ -44,12 +44,6 @@ const Middle = () => {
                 onEnter: () => gsap.to(firstImage.current, { opacity: 1, duration: 1, ease: "power4.inOut" })
             });
 
-            return () => {
-                if (tl.scrollTrigger) {
-                    tl.scrollTrigger.kill();
-                }
-                tl.kill();
-            };
         }
     }, []);
 

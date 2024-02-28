@@ -40,7 +40,7 @@ const VideoBlock = () => {
         ScrollTrigger.create({
             trigger: vidBlock.current,
             start: "top 90%",
-            end: "bottom 0%",
+            end: "bottom 10%",
             // scrub: true,
             markers: true,
             onEnter: () => gsap.to('body', {duration: 1.0, backgroundColor: '#000000', ease: "power1.inOut"}),
