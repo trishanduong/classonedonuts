@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 
 const Filler = ( ) => {
   gsap.registerPlugin(ScrollTrigger);
-  const fillerRef = useRef(null); 
+  const fillerRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    const images = gsap.utils.toArray('.filler-img'); // Select all images with the class 'filler-img'
+    const images = gsap.utils.toArray('.filler-img') as Element[]; // Select all images with the class 'filler-img'
 
     // Loop through each image and create a ScrollTrigger animation
     images.forEach((img) => gsap.fromTo(
