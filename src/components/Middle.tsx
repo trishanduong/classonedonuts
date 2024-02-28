@@ -41,7 +41,10 @@ const Middle = () => {
             ScrollTrigger.create({
                 trigger: wrapper.current,
                 start: "top 10%",
-                onEnter: () => gsap.to(firstImage.current, { opacity: 1, duration: 1, ease: "power4.inOut" })
+                onEnter: () => {
+                    gsap.to('body', {backgroundColor: '#F9F5F1', ease: "power1.inOut", duration: 1.0}),
+                    gsap.to(firstImage.current, { backgroundColor:"", opacity: 1, duration: 1, ease: "power4.inOut" })
+                }
             });
 
         }
@@ -65,25 +68,25 @@ const Middle = () => {
                             ref={firstImage}
                             src="https://s3-media0.fl.yelpcdn.com/bphoto/MYgU5sD7OKaYQMIPD6hR4w/o.jpg" 
                             alt="Plate of a sprinkled pink donut tower" 
-                            className="insta" 
+                            className="insta rounded-lg" 
                             style={{ opacity: 0 }} 
                         />
                     </div>
                     <div className="slide">
                     <img 
                         aria-label="image of blended ice coffees (mocha, cookies n cream, caramel"
-                        src="https://s3-media0.fl.yelpcdn.com/bphoto/dv4g5Q6S013VH7f01by1Ug/o.jpg" alt="blended ice coffees (mocha, cookies n cream, caramel" className="insta" />
+                        src="https://s3-media0.fl.yelpcdn.com/bphoto/dv4g5Q6S013VH7f01by1Ug/o.jpg" alt="blended ice coffees (mocha, cookies n cream, caramel" className="insta rounded-lg" />
                     </div>
                     <div className="slide">
                         <img 
                             aria-label="two dogs looking at a colorful fruity pebble donut"
-                            src={dogs} alt="two dogs looking at a colorful fruity pebble donut" className="insta" />
+                            src={dogs} alt="two dogs looking at a colorful fruity pebble donut" className="insta rounded-lg" />
                     </div>
                     {/* <div className="slide">
                         <img src="https://s3-media0.fl.yelpcdn.com/bphoto/BZLdjOF1A2S6xKy_3p1uMQ/o.jpg" aria-label="image of fruity pebble donuts" alt="Fruity pebbles glazed donut" className="insta" />
                     </div> */}
                     <div className="slide">
-                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/3oxc0D0YxGs1hm0gix2Myw/o.jpg" alt="Box of donuts" aria-label="image of box of donuts" className="insta" />
+                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/3oxc0D0YxGs1hm0gix2Myw/o.jpg" alt="Box of donuts" aria-label="image of box of donuts" className="insta rounded-lg" />
                     </div>
                     {/* <div className="slide">
                         <img src="https://s3-media0.fl.yelpcdn.com/bphoto/57KDUQcoSKs-JVXT73K8zA/o.jpg" aria-label="donut display" alt="Donut display" className="insta" />

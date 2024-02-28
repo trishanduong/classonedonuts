@@ -62,7 +62,7 @@ const VideoBlock = () => {
                 <GiDonut size={48} color="#E89BA2" aria-label="Donut"/>
             </div>
             {/* Marquee */}
-            <div className="absolute top-12 lg:top-1/2 left-0 w-full h-full">
+            <div className="absolute top-4 lg:top-1/2 left-0 w-full h-full">
                 <div ref={marqueeInner} className=" flex">
                     {Array(6).fill(6).map((_, index) => (
                         <div key={index} className="marquee__part flex-shrink-0 px-1 py-3 font-grotesk whitespace-nowrap text-3xl uppercase font-semibold text-amber-400 bg-transparent">
@@ -79,7 +79,7 @@ const VideoBlock = () => {
             {/* Video Content */}
             <div ref={video} className=" z-10">
                 {/* InstagramEmbed or other content */}
-                <InstagramEmbed url="https://www.instagram.com/p/C3DcMPnRrhQ/" width={328} />
+                <InstagramEmbed url="https://www.instagram.com/p/C3DcMPnRrhQ/" title="Instagram clip" width={328} />
             </div>
             <div className='lg:absolute bottom-0' ref={donut2}>
                 <GiDonut  size={48} color="#E89BA2" aria-label="Donut" />
