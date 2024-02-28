@@ -1,37 +1,14 @@
-import { useEffect, useRef} from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Filler = ( ) => {
-  const imgContainer = useRef(null);
-  const img = useRef(null);
-  const text = useRef(null);
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    ScrollTrigger.create({
-        trigger: img.current,
-        start: "top+=25% bottom",
-        scrub: true,
-        end: "bottom top",
-        animation: gsap
-          .timeline()
-          .to(text.current, { y: 0, opacity:1, duration: 1, ease: "power4.inOut", stagger:1 }, "-=1.0")
-          .to(imgContainer.current, { scale:1, duration: 0.5, delay:0.2, ease: "Power4.inOut", stagger: 1}),
-        toggleActions: "play none none none",
-      });
-  
-  }, []);
 
   return (
-    <section id="filler" className="hero relative flex flex-col w-screen h-[80vh] select-none justify-center items-center overflow-hidden font-grotesk" aria-label="hero">
-      <div ref={text} className=" p-3 pt-5 w-full text-dbrown text-3xl lg:text-4xl opacity-0 px-16">
+    <section id="filler" className="bg-beige-white relative flex flex-col w-screen h-[80vh] select-none justify-center items-center overflow-hidden font-grotesk" aria-label="hero">
+      <div className="p-3 pt-5 w-full text-dbrown text-3xl lg:text-4xl px-16">
         Class One Donuts is a local small-owned donut shop in Glendora. 
         We strive to provide the best customer service and memorable experience at our shop. 
       </div>
-      <div ref={imgContainer} className="relative h-[90vh] overflow-auto w-full">
-        <div ref={img} className="mx-auto mt-6 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
+      <div className="relative h-[90vh] overflow-auto w-full">
+        <div className="mx-auto mt-6 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
             <div className="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
                 <img src="https://lh3.googleusercontent.com/p/AF1QipMO4WioKq2xQBr9N1hg4Err7sj0grjP5vqpFPKL=s1360-w1360-h1020" alt="Stack of blueberry bagels." className="h-full w-full object-cover object-center" />
             </div>
