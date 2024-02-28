@@ -17,7 +17,7 @@ const Article = () => {
 
     return (
         <div className="h-[50vh] w-full flex flex-col justify-center items-center bg-beige-white pt-50 ">
-            <p className="font-grotesk text-3xl font-medium text-pbrown text-center pb-8 lg:px-2 lg:text-4xl">
+            <p className="font-grotesk text-3xl lg:text-4xl font-medium text-pbrown text-center pb-8 lg:px-2 ">
                 From our family to yours, <span className="text-dbrown">Class One Donuts:</span> blending tradition with innovation 
             </p>
             <span ref={donut} className="flex justify-center">

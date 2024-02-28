@@ -42,7 +42,7 @@ const VideoBlock = () => {
             start: "top 90%",
             end: "bottom 10%",
             // scrub: true,
-            markers: true,
+            // markers: true,
             onEnter: () => gsap.to('body', {duration: 1.0, backgroundColor: '#000000', ease: "power1.inOut"}),
             onLeave: () => gsap.to('body', {backgroundColor: '#F9F5F1', ease: "power1.inOut", duration: 1.0}),
             onEnterBack: () => gsap.to('body', {backgroundColor: '#000000', ease: "power1.inOut", duration: 1.0}),

@@ -52,10 +52,10 @@ const Middle = () => {
             <div ref={slider} className="slider pt-20">
                 <div className="text-dpink text-center font-grotesk">
                     <div className="flex p-5 justify-center">
-                        <p className="flex text-3xl lg:text-5xl font-medium z-90 pb-7">Take a glimpse at our yummy goodies <ImPointDown size={48} className="animate-bounce lg:hidden " aria-label="Arrow pointing down"/> </p>
+                        <p className="flex text-3xl lg:text-4xl font-medium z-90 pb-7">Take a glimpse at our yummy goodies <ImPointDown size={48} className="animate-bounce lg:hidden " aria-label="Arrow pointing down"/> </p>
                         <ImPointDown size={48} className="animate-bounce hidden lg:block " aria-label="Arrow pointing down"/>
                     </div>
-                    <p className=" text-pbrown text-3xl lg:text-4xl  hover:text-dpink">
+                    <p className=" text-pbrown text-2xl lg:text-3xl  hover:text-dpink">
                         <a href="#contact" className="underline underline-offset-8 hover:bg-dbw p-3 rounded-md">Or take a look at our business hours! </a>
                     </p>
                 </div>

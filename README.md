@@ -22,6 +22,17 @@ I primarily focused on creating a landing website that was minimalistic yet fun,
 - Appropriate Navigation Links 
 - Business Hours
 
+
+## Roadmap
+
+- [x] Landing page
+- [x] Business Social Media: Instagram, Order, Yelp, Links to Doordash
+- [x] Mobile responsiveness as well as a hamburger menu for navigation
+- [x] Video embedding (promotional)
+- [] Arrow for efficient scrolling up 
+- [] Make the Hero more interesting (particularly on the right side) - maybe some animation
+
+
 ### Prerequisites
 
 **Node version 14.x**

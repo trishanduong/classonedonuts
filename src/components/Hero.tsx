@@ -98,7 +98,7 @@ const Hero = () => {
           className="object-cover w-full h-full lg:w-1/2 pointer-events-none"
           style={{ opacity: 0.85 }} // Inline style for opacity to prevent flickering during GSAP animation
         />
-        <div className="absolute inset-x-0 inset-y-10 lg:relative flex flex-col items-center lg:justify-start lg:items-start lg:w-1/2 px-6 py-12 lg:pl-[10%] lg:pr-20">
+        <div className="absolute inset-0 lg:relative flex flex-col items-center lg:justify-start lg:items-start lg:w-1/2 px-6 py-2 lg:pl-[10%] lg:pr-20">
           <div className="bg-beige-white lg:bg-ppink w-[50vh] lg:w-full bg-opacity-90">
             <div ref={text} className="font-grotesk text-5xl lg:text-7xl font-bold text-pbrown lg:text-pbrown opacity-0 z-10 text-center lg:text-left p-4">
               <span className="block">voted</span>

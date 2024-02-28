@@ -13,7 +13,7 @@ const Navigation = () => {
   const [openModal, setOpenModal] = useState(false);
 
    return (
-    <nav className="navbar grid grid-cols-[auto_1fr_auto] items-center w-screen px-5 lg:px-20 bg-beige-white">
+    <nav className="navbar grid grid-cols-[auto_1fr_auto] items-center w-screen px-2 lg:px-20 bg-beige-white">
       <div className="left-group grid gap-2.5 text-xl">
         <div className="hidden lg:flex lg:gap-8 " >
           <div className="hover:bg-ppink rounded-full p-2">
